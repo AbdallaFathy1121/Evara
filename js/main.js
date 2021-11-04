@@ -1,6 +1,12 @@
 
-$(document).ready(function() {
 
+$(window).on('load', function() {
+
+
+    // Loading
+    $(".box-loading").delay(0).fadeOut('slow', function(){
+        $(this).remove().fadeOut();
+    });
 
     /* Owl Carousel */
     var owl = $('.owl-carousel');
@@ -12,6 +18,22 @@ $(document).ready(function() {
         loop: true,
         autoplay:true,
         autoplayTimeout: 5000,
+    });
+
+    ///////////////////////////////////////////////
+
+    $(window) .on('scroll' , function () { 
+
+        if ( $(window).scrollTop() > 60 ) {
+
+            $('.header nav') .addClass('active-nav');
+
+        } else {
+
+            $('.header nav') .removeClass('active-nav');
+
+        }
+
     });
 
     /////////////////////////////////////////////////
@@ -109,6 +131,8 @@ $(document).ready(function() {
           }]
             
     });
+
+    ///////////////////////////////////////////////////////
 
 
 
