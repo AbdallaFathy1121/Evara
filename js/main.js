@@ -22,6 +22,8 @@ $(window).on('load', function() {
 
     ///////////////////////////////////////////////
 
+    // Navbar on Scroll
+
     $(window) .on('scroll' , function () { 
 
         if ( $(window).scrollTop() > 60 ) {
@@ -34,6 +36,33 @@ $(window).on('load', function() {
 
         }
 
+    });
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    // ScrollTop 
+
+    $('.scroll').click(function(){
+        $('body, html').animate({
+            scrollTop: 0
+        }, 1200);
+    });
+
+    $(window).scroll(function(){
+
+        if ( $(window).scrollTop() > 600 ) {
+            
+            $('.scroll').css({
+                opacity: 1
+            });
+
+        } else{
+
+            $('.scroll').css({
+                opacity: 0
+            });
+
+        }
     });
 
     /////////////////////////////////////////////////
