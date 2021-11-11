@@ -1,0 +1,245 @@
+#colors {
+    color: #046963;
+    color: #088178;
+    color: #1a1a1a;
+    color: #212529;
+    color: #3547B3;
+    color: #3547B3;
+    color: #465b52;
+    color: #4f5d77;
+    color: #63a2c1;
+    color: #d77f7a;
+    color: #fff;
+}
+
+/* Start Left */
+
+.shop .left .header .title {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: #465b52;
+}
+
+.shop .left .header .title strong {
+    color: #088178;
+}
+
+.shop .left .header .button .dropdown .dropdown-toggle {
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #f7f8f9;
+    border: 1px solid #f7f8f9;
+    color: #777;
+    padding: 9px 16px;
+    border-radius: 26px;
+    -webkit-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    cursor: pointer;
+    border: 1px solid #e2e9e1;
+    padding-left: 45px;
+}
+
+
+.shop .left .header .button {
+    position: relative;
+}
+
+.shop .left .header .button img {
+    position: absolute;
+    left: 16px;
+    top: 27%;
+    width: 22px;
+    z-index: 1;
+}
+
+.shop .left .header .button .dropdown .dropdown-menu .dropdown-item:hover {
+    background: #088179;
+    color: #fff;
+}
+
+.shop .left .pagination nav li a{
+    color: #088178 !important;
+}
+
+.shop .left .pagination nav .active a{
+    background-color: #088178 !important;
+    color: #fff !important;
+}
+
+@media (max-width: 465px) {
+    .shop .left .header .title {
+        font-size: 14px;
+    }
+
+    .shop .left .header .button .dropdown .dropdown-toggle {
+        font-size: 14px;
+        padding: 7px 8px;
+        padding-left: 30px;
+    }
+
+    .shop .left .header .button img {
+        width: 16px;
+        top: 30%;
+        left: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .shop .left .header .title {
+        display: none !important;
+    }
+    .shop .left .header .button {
+        margin: auto !important;
+    }
+}
+
+/* End Left */
+
+/* ------------------------------------------------------ */
+
+/* Start Right */
+
+.shop .right .list-box {
+    position: relative;
+    padding: 30px;
+    border: 1px solid #e8e8e8;
+}
+
+.shop .right .list-box .title {
+    position: relative;
+    border-bottom: 1px solid #e2e9e1;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-size: 25px;
+}
+
+.shop .right .list-box .title:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 35%;
+    height: 2px;
+    background-color: #088178;
+    z-index: 2;
+}
+
+.shop .right .list-box ul {
+    list-style: none;
+    margin-top: 24px;
+}
+
+.shop .right .list-box ul li {
+    position: relative;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.shop .right .list-box ul li a {
+    font-weight: normal;
+    color: #242424;
+}
+
+.shop .right .list-box ul li .sub-category {
+    display: none;
+}
+
+.shop .right .list-box ul li .sub-category a {
+    display: block;
+    padding: 5px 10px;
+    padding-left: 20px;
+    color: #088178;
+}
+
+.shop .right .list-box ul li .sub-category a:hover {
+    background-color: #088178;
+    color: #fff;
+}
+
+.shop .right .list-box ul li svg {
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+
+.irs--flat .irs-bar {
+    background-color: #088178 !important;
+}
+
+.irs--flat .irs-handle>i:first-child {
+    background-color: #088178 !important;
+}
+
+.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
+    background-color: #088178 !important;
+}
+
+.irs--flat .irs-from:before, .irs--flat .irs-to:before, .irs--flat .irs-single:before {
+    border-top-color: #088178 !important;
+}
+
+.shop .right .filter form button {
+    outline: none;
+    border: none;
+    background-color: #088178;
+    color: #fff;
+    padding: 6px 18px;
+    border-radius: 4px;
+    transition: all .3s;
+}
+
+.shop .right .filter form button:hover {
+    padding-left: 25px;
+    background-color: #046963;
+}
+
+.shop .right .banar {
+    height: 300px;
+    position: relative;
+}
+
+.shop .right .banar img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.shop .right .banar .info {
+    position: absolute;
+    left: 0;
+    padding-left: 20px;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.shop .right .banar .info p {
+    margin-bottom: -2px;
+    color: #777;
+}
+
+.shop .right .banar .info a {
+    color: #088178;
+}
+
+.shop .right .banar .info a svg {
+    position: relative;
+    top: 2px;
+}
+
+@media (max-width: 992px) {
+    .shop .right .banar {
+        display: none;
+    }
+}
+
+/* End Right */

@@ -163,9 +163,26 @@ $(window).on('load', function() {
 
     ///////////////////////////////////////////////////////
 
+    // Ion-RangeSlider
 
+    $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 5000,
+        from: 100,
+        to: 1000,
+        grid: true
+    });
 
+    //////////////////////////////////////////////////////
 
+    // SLide Toggle (category & Sub Category)
+
+   
+
+    $(".shop .right .category ul li").click(function(){
+        $(this).children(".sub-category").slideToggle();
+    });
 
 
 
