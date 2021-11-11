@@ -1237,6 +1237,8 @@ a {
 
 .breadcrumb .container {
     padding-left: 23px !important;
+    display: flex !important;
+    flex-wrap: wrap;
 }
 
 .breadcrumb li a {

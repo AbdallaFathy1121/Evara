@@ -2,11 +2,64 @@
 
 $(window).on('load', function() {
 
-
     // Loading
     $(".box-loading").delay(0).fadeOut('slow', function(){
         $(this).remove().fadeOut();
     });
+
+    ////////////////////////////////////////////////////
+
+        // SLick in Product page
+
+        $('.slider-single').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: false,
+            adaptiveHeight: true,
+            infinite: true,
+            useTransform: true,
+            speed: 400,
+            cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
+        });
+       
+        $('.slider-nav')
+            .on('init', function(event, slick) {
+                $('.slider-nav .slick-slide.slick-current').addClass('is-active');
+            })
+            .slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: false,
+                loop: true,
+                focusOnSelect: true,
+                adaptiveHeight: true,
+                prevArrow: '<span class="prev-arrow"><i class="fas fa-angle-left"></i></span>',
+                nextArrow: '<span class="next-arrow"><i class="fas fa-angle-right"></i></span>',
+                infinite: true,
+                responsive: [{
+                    breakpoint: 420,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                }]
+            });
+       
+        $('.slider-single').on('afterChange', function(event, slick, currentSlide) {
+            $('.slider-nav').slick('slickGoTo', currentSlide);
+            var currrentNavSlideElem = '.slider-nav .slick-slide[data-slick-index="' + currentSlide + '"]';
+            $('.slider-nav .slick-slide.is-active').removeClass('is-active');
+            $(currrentNavSlideElem).addClass('is-active');
+        });
+       
+        $('.slider-nav').on('click', '.slick-slide', function(event) {
+            event.preventDefault();
+            var goToSingleSlide = $(this).data('slick-index');
+       
+            $('.slider-single').slick('slickGoTo', goToSingleSlide);
+        });
+    
+    /////////////////////////////////////////////////////
 
     /* Owl Carousel */
     var owl = $('.owl-carousel');
@@ -66,6 +119,14 @@ $(window).on('load', function() {
     });
 
     /////////////////////////////////////////////////
+
+    // Size button active
+
+    $(".product .right .size button").click (function() {
+        $(this).addClass("active").siblings().removeClass("active");
+    })
+        
+    ///////////////////////////////////////////////
 
         // Slick Carousel
         $('#slider').slick({
@@ -178,12 +239,13 @@ $(window).on('load', function() {
 
     // SLide Toggle (category & Sub Category)
 
-   
-
     $(".shop .right .category ul li").click(function(){
         $(this).children(".sub-category").slideToggle();
     });
 
+    /////////////////////////////////////////////////////
+
+    $(".product .slick-slide").height( $(".product .slider-single .item").height() );
 
 
 
