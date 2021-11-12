@@ -255,8 +255,169 @@
         }
     }
 
-
     /* End Right-product */
+
+    /* ************************************************ */
+
+    /* Start Delivery */
+
+    .product .content .title {
+        position: relative;
+        margin-bottom: 0;
+        font-size: 28px;
+        font-weight: 700;
+        color: #1a1a1a;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #0000001a;
+    }
+    @media (max-width: 450px) {
+        .product .content .title {
+            font-size: 22px;
+            font-weight: 600;
+        }
+    }
+
+
+    .product .content .title:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 100px;
+        background-color: #088178;
+    }
+
+    .product .delivery p {
+        margin: 15px 0;
+    }
+
+    /* End Delivery */
+
+    /* ************************************************** */
+
+    /* Start Add-review */
+
+    .add-review form .textbox {
+        width: 50%;
+        height: 200px;
+    }
+    @media (max-width: 745px) {
+        .add-review form .textbox {
+            width: 100%;
+        }
+    }
+
+    .add-review form .textbox textarea {
+        resize: vertical;
+        border: 1px solid #e2e9e1;
+        padding: 15px 10px 10px 20px;
+        font-size: 13px;
+        color: #1a1a1a;
+        border-radius: 4px;
+        outline: none;
+    }
+
+    .add-review form .textbox textarea:hover {
+        border-color: #088178;
+    }   
+
+    .add-review form .number {
+        padding: 3px 8px;
+        outline: none;
+        border: 1px solid #e2e9e1;
+        font-size: 13px;
+        color: #1a1a1a;
+        border-radius: 4px;
+    }
+
+    .add-review form .submit button {
+        font-size: 15px;
+        font-weight: 500;
+        padding: 12px 40px;
+        color: #fff;
+        border: none;
+        background-color: #088178;
+        border: 1px solid #046963;
+        border-radius: 4px;
+        outline: none;
+        transition: all .3s;
+    }
+
+    .add-review form .submit button:hover {
+        background-color: #046963;
+    }
+
+    /* End Add-review */
+    
+    /* *********************************************************** */
+
+    /* Start Reviews */
+
+    .product .reviews .left .sub-title {
+        color: #2a2a2a;
+        font-size: 20px;
+        font-weight: 600;   
+    }
+    @media (max-width: 450px) {
+        .product .reviews .left .sub-title {
+            font-size: 17px;
+        }
+    }
+
+    .product .reviews .left .left {
+        width: 90px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .product .reviews .left .left img {
+        width: 100%;
+        margin: auto;
+        border-radius: 50%;
+    }
+
+    .product .reviews .left .row {
+        border-bottom: 1px solid #0000001a;
+    }
+
+    .product .reviews .left .row .right {
+        width: 60%;
+    }
+
+    .product .reviews .left .row .right .rating span {
+        color: #088178;
+        font-weight: 500;
+    }
+
+    .product .reviews .right .rating span {
+        color: #088178;
+        font-weight: 600;
+    }
+
+    .product .reviews .right .progress {
+        display: flex;
+        height: 1rem;
+        overflow: hidden;
+        font-size: .75rem;
+        background-color: #e9ecef;
+        border-radius: .25rem;
+        margin-bottom: 15px;
+    }
+
+    .product .reviews .right .progress span {
+        line-height: 16px;
+        background: #fff;
+        padding-right: 10px;
+        font-weight: 600;
+        width: 45px;
+    }
+
+    .product .reviews .right .progress .progress-bar {
+        background-color: #088178;
+    }
+
+    /* End Reviews */
 
 /* End product */
 
