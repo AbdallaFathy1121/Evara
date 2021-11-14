@@ -24,18 +24,21 @@
         <!-- ------------------------------------------------------------------------------ -->
         <!-- Start Register -->
         <div class="register login">
+            <div class="image-box">
+                <img src="images/logo.svg" alt="">
+            </div>
             <h4 class=" text-center">Register</h4>
             <br>
             <form>
                 <div class="form-group">
                     <img src="images/form/user.png" alt="">
-                    <label for="exampleInputuser">USername</label>
-                    <input type="text" class="form-control" id="exampleInputuser">
+                    <label for="exampleInputuser">Username</label>
+                    <input type="text" class="form-control" id="exampleInputuser" required>
                 </div>
                 <div class="form-group">
                     <img src="images/form/email.png" alt="">
                     <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div class="form-group">
@@ -46,12 +49,12 @@
                 <div class="form-group">
                     <img src="images/form/password.png" alt="">
                     <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <input type="password" class="form-control" id="exampleInputPassword1" required>
                 </div>
                 <div class="form-group">
                     <img src="images/form/confirm.png" alt="">
                     <label for="exampleInputPassword2">Confirm Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword2">
+                    <input type="password" class="form-control" id="exampleInputPassword2" required>
                 </div>
                 <button type="submit" class="btn submit mt-3">Submit</button>
             </form>

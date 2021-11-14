@@ -36,7 +36,7 @@
 }
 
 .login {
-    position: absolute;
+    position: relative;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -51,10 +51,10 @@
 }
 
 .register {
-    position: absolute;
+    position: relative;
     left: 50%;
     top: 0;
-    height: 740px;
+    margin-bottom: 30px;
     margin-top: 30px;
     -webkit-transform: translate(-50%, 0);
     -moz-transform: translate(-50%, 0);
@@ -86,7 +86,7 @@ label {
     font-family: cursive;
     font-weight: 600;
     font-size: 16px;
-    color: #1d1d1d87;
+    color: #1d1d1d;
 }
 
 .login h4 {
@@ -166,6 +166,15 @@ label {
         45deg
         , #0000, #ccc, #0000);
     z-index: 1;
+}
+
+.login .image-box {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.login .image-box img {
+    width: 100%;
 }
 
 /* End Login */
