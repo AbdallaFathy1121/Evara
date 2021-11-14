@@ -6,7 +6,6 @@ body {
     font-style: normal;
     font-weight: 400;
     width: 100%;
-    overflow-x: hidden;
 }
 
 * {
@@ -272,6 +271,13 @@ a {
     .header nav {
         border-bottom: 1px solid #d8f4e2;
         padding: 20px 0;
+        transition: all .5s ease;
+        transform-origin: top;
+    }
+
+    .animate {
+        -webkit-transform: perspective(400px) rotateX(-90deg);
+        transform: perspective(400px) rotateX(-90deg);
     }
 
     .header .active-nav {

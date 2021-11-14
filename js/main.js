@@ -117,6 +117,17 @@ $(window).on('load', function() {
         }
     });
 
+    var Top = 0;
+    $(window).on('scroll',function(){
+      var scrollTop = $(this).scrollTop();
+      if (scrollTop > Top)    {
+        $('.navbar').addClass('animate');
+      } else {
+        $('.navbar').removeClass('animate');
+      }
+      Top = scrollTop;
+    });
+
     /////////////////////////////////////////////////
 
     // Size button active
