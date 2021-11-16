@@ -1,0 +1,113 @@
+#colors {
+    color: #046963;
+    color: #088178;
+    color: #1a1a1a;
+    color: #212529;
+    color: #3547B3;
+    color: #3547B3;
+    color: #465b52;
+    color: #4f5d77;
+    color: #63a2c1;
+    color: #d77f7a;
+    color: #fff;
+}
+
+/* Start Cart */
+
+.cart {
+    margin-bottom: 80px;
+}
+
+.cart table {
+    min-width: 670px;
+}
+
+.cart .table-responsive-lg tbody tr td img {
+    max-width: 80px;
+}
+
+.table td {
+    vertical-align: baseline !important;
+}
+
+.cart .table-responsive-lg tbody tr .name {
+    color: #046963;
+}
+
+.cart .table-responsive-lg tbody tr .qty input {
+    max-width: 80px;
+    padding: 9px 10px;
+    position: relative;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #e2e9e1 !important;
+    outline: none;
+}
+
+.cart .table-responsive-lg tbody tr .remove a {
+    cursor: pointer;
+    color: #8e8e90 !important;
+    font-size: 20px;
+}
+
+.cart .buttons a {
+    color: #8e8e90 !important;
+    font-size: 17px;
+}
+
+.cart .buttons .info .left a {
+    color: #1a1a1a !important;
+    font-size: 20px;
+}
+
+.cart .buttons .info .left a span {
+    color: #046963 !important;
+    font-weight: 600;
+}
+
+.cart .buttons .proccess a {
+    color: #fff !important;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px 30px;
+    border-radius: 4px;
+    border: 1px solid #046963;
+    background-color: #088178;
+    transition: all .3s;
+}
+.cart .buttons .proccess a:hover {
+    background-color: #046963;
+}
+
+@media (max-width: 805px) {
+    .cart .buttons .proccess {
+        display: block !important;
+    }
+
+    .cart .buttons .proccess .right {
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 465px) {
+    .cart .buttons .proccess a {
+        font-size: 13px;
+        letter-spacing: 1px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 383px) {
+    .cart .buttons .proccess .left a {
+        display: block !important;
+        width: max-content;
+        margin-bottom: 15px;
+    }
+    .cart .buttons .proccess .right {
+        margin-top: 20px;
+    }
+}
+
+
+/* End Cart */
+
