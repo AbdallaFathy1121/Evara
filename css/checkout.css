@@ -1,0 +1,144 @@
+#colors {
+    color: #046963;
+    color: #088178;
+    color: #1a1a1a;
+    color: #212529;
+    color: #3547B3;
+    color: #3547B3;
+    color: #465b52;
+    color: #4f5d77;
+    color: #63a2c1;
+    color: #d77f7a;
+    color: #fff;
+}
+
+
+/* Start Checkout */
+
+.checkout form .title img {
+    width: 40px;
+    margin-right: 2px;
+    position: relative;
+    top: -2px;
+}
+
+.checkout form .title {
+    font-family: "Spartan", sans-serif;
+    color: #222;
+    font-weight: 600;
+    line-height: 1.2;
+    font-size: 19px;
+}
+
+.checkout form .row .form-group{
+    position: relative;
+    margin-bottom: 20px !important;
+}
+
+.checkout form .form-group img {
+    position: absolute;
+    top: 5px;
+    width: 27px;
+    height: 27px;
+    left: 7px;
+}
+
+.checkout form .form-group input {
+    padding: 0 5px 0px 47px;
+}
+
+.checkout form .form-group:after {
+    content: '';
+    position: absolute;
+    left: 39px;
+    top: 0;
+    height: 36px;
+    height: 100%;
+    width: 1px;
+    background: linear-gradient( 
+    45deg
+    , #0000, #ccc, #0000);
+}
+
+.checkout form .notes:after {
+    content: none;
+}
+
+.checkout form .right {
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.checkout .table td {
+    vertical-align: baseline !important;
+}
+
+.checkout .table td img {
+    max-width: 60px;
+}
+
+.checkout .table .name {
+    color: #046963;
+    vertical-align: middle !important;
+}
+
+.checkout .table .name p {
+    margin-bottom: 0 !important;
+    color: #212529;
+    margin-top: 3px;
+}
+
+.checkout table {
+    min-width: 390px;
+}
+
+.checkout table tr .total-price {
+    font-size: 14px;
+    color: #465b529c;
+}
+
+.checkout table tr .total-price span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #046963;
+}
+
+.checkout .payment .title {
+    font-size: 17px;
+}
+
+.checkout .payment .title img {
+    width: 30px;
+}
+
+
+.form-check-label,
+.form-check-input {
+    font-size: 15px;
+    color: #292b2c;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.payment .form-check {
+    margin-bottom: 8px;
+}
+
+.checkout .submit {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px 30px;
+    border-radius: 4px;
+    color: #fff;
+    border: 1px solid #046963;
+    background-color: #088178;
+    cursor: pointer;
+    -webkit-transition: all 300ms linear 0s;
+    transition: all .3s;
+    letter-spacing: 0.5px;
+}
+.checkout .submit:hover {
+    background-color: #046963;
+}
+/* End Checkout */

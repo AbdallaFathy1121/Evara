@@ -12,13 +12,13 @@
 
         <!-- Main Css File -->
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/cart.css">
+        <link rel="stylesheet" href="css/checkout.css">
 
-        <title>Evara - Your Cart</title>
+        <title>Evara - CheckOut</title>
 
     </head>
     <body id="scroll">
-
+        
         <!-- ------------------------------------------------------------------------------ -->
         <!-- Start Header -->
         <div class="header">
@@ -152,7 +152,7 @@
                 </li>
                 <i class="fas fa-angle-right"></i>
                 <li>
-                    <a href="#">Your Cart</a>
+                    <a href="#">CheckOut</a>
                 </li>
                
             </div>
@@ -161,98 +161,158 @@
         <!-- ------------------------------------------------------------------------------ -->
 
         <!-- ------------------------------------------------------------------------------ -->
-        <!-- Start Cart -->
-            <div class="cart container mt-5">
+        <!-- Start CheckOut -->
+        <div class="checkout mb-5 mt-5">
+            <div class="container">
+                <form action="">
+                    <div class="row">
 
-                <!-- Start Table -->
-                <div class="table-responsive-lg mb-2">
-                    <table class="table table-hover text-center">
-                        <thead>
-                            <tr>
-                                <th scope="col">Image</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Quntity</th>
-                                <th scope="col">Subtotal</th>
-                                <th scope="col">Remove</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><img src="images/products/product-10-2.jpg" alt=""></td>
-                                <td class="name">J.Crew Mercantile Women's Short-Sleeve</td>
-                                <td class="price">$65.00</td>
-                                <td class="qty">
-                                    <input type="number" min="1">
-                                </td>
-                                <td class="subtotal">$65.00</td>
-                                <td class="remove">
-                                    <a href="#">
-                                        <i class='bx bx-trash'></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><img src="images/products/product-14-2.jpg" alt=""></td>
-                                <td class="name">Amazon Essentials Women's Tank</td>
-                                <td class="price">$75.00</td>
-                                <td class="qty">
-                                    <input type="number" min="1">
-                                </td>
-                                <td class="subtotal">$150.00</td>
-                                <td class="remove">
-                                    <a href="#">
-                                        <i class='bx bx-trash'></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><img src="images/products/product-8-2.jpg" alt=""></td>
-                                <td class="name">Amazon Brand - Daily Ritual Women's Jersey</td>
-                                <td class="price">$53.00</td>
-                                <td class="qty">
-                                    <input type="number" min="1">
-                                </td>
-                                <td class="subtotal">$110.00</td>
-                                <td class="remove">
-                                    <a href="#">
-                                        <i class='bx bx-trash'></i>
-                                    </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <!-- End Table -->
-
-                <!-- Start buttons -->
-                <div class="buttons mt-3">
-
-                    <div class="info d-flex align-items-center">
-                        <div class="left">
-                            <a href="#">Total: <span>$568.00</span></a>
+                        <!-- Start Left Section -->
+                        <div class="col-lg-6 mb-lg-0 mb-4">
+                            <div class="left">
+                                <div class="title mb-4">
+                                    <img src="images/form/form.png" alt="">                                    
+                                    Billing Details
+                                </div>
+                                <div class="form-group">
+                                    <img src="images/form/name.png" alt="">
+                                    <input type="text" class="form-control" placeholder="Full Name *" required>
+                                </div>
+                                <div class="form-group">
+                                    <img src="images/form/email.png" alt="">
+                                    <input type="email" class="form-control" placeholder="Your Email *" required>
+                                </div>
+                                <div class="form-group">
+                                    <img src="images/form/phone.png" alt="">
+                                    <input type="number" class="form-control" placeholder="Your Phone (1) *" required>
+                                </div>
+                                <div class="form-group">
+                                    <img src="images/form/phone.png" alt="">
+                                    <input type="number" class="form-control" placeholder="Your Phone (2)">
+                                </div>
+                                <div class="row pl-0 pr-0">
+                                    <div class="col-md-6 pl-0 pr-lg-2 pr-md-2 pr-sm-0 pr-0">
+                                        <div class="form-group">
+                                            <img src="images/form/country.png" alt="">
+                                            <input type="text" class="form-control" placeholder="Your Country *" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 pr-0 pl-lg-2 pl-md-2 pl-sm-0 pl-0">
+                                        <div class="form-group">
+                                            <img src="images/form/city.png" alt="">
+                                            <input type="text" class="form-control" placeholder="Your City *" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <img src="images/form/code-zip.png" alt="">
+                                    <input type="text" class="form-control" placeholder="Postcode / Zip *" required>
+                                </div>
+                                <div class="form-group">
+                                    <img src="images/form/address.png" alt="">
+                                    <input type="text" class="form-control" placeholder="Your Address *" required>
+                                </div>
+                                <div class="form-group notes">
+                                    <textarea class="form-control" rows="6" placeholder="Order Notes ..."></textarea>
+                                </div>
+                            </div>
                         </div>
-                        <div class="right ml-auto">
-                            <a href="#" class="clear ml-auto">
-                                <i class="far fa-times-circle"></i> Clear Cart
-                            </a>
+                        <!-- End Left Section -->
+
+                        <!-- Start Right Section -->
+                        <div class="col-lg-6">
+                            <div class="right">
+                                <div class="title mb-4">
+                                    <img src="images/form/orders.png" alt="">
+                                    Your Orders
+                                </div>
+
+                                <!-- Start Table -->
+                                <div class="table-responsive-md mb-4">
+                                    <table class="table table-bordered text-center">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="2">Product</th>
+                                                <th scope="col">total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img src="images/products/product-10-2.jpg" alt=""></td>
+                                                <td class="name">
+                                                    J.Crew Mercantile Women's Short-Sleeve
+                                                    <p>x 2</p>
+                                                </td>
+                                                <td class="price">$65.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="images/products/product-14-2.jpg" alt=""></td>
+                                                <td class="name">
+                                                    LDB MOON Women Summe
+                                                    <p>x 3</p>
+                                                </td>
+                                                <td class="price">$180.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="images/products/product-8-2.jpg" alt=""></td>
+                                                <td class="name">
+                                                    Women's Short Sleeve Loose
+                                                    <p>x 1</p>
+                                                </td>
+                                                <td class="price">$210.00</td>
+                                            </tr>
+
+                                            <!-- Strat Total -->
+                                            <tr>
+                                                <td colspan="1">
+                                                    Total
+                                                </td>
+                                                <td colspan="2" class="total-price">
+                                                    <span>$350.00</span> + Shipping Expenses
+                                                </td>
+                                            </tr>
+                                            <!-- End Total -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- End Table -->
+
+                                <!-- Start Payment -->
+                                <div class="payment">
+                                    <div class="title mb-3">
+                                        <img src="images/form/payment.png" alt="">
+                                        Payment
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="method" id="Cach"checked>
+                                        <label class="form-check-label" for="Cach">
+                                            Cach
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="method" id="paypal">
+                                        <label class="form-check-label" for="paypal">
+                                            Paypal
+                                        </label>
+                                    </div>
+                                </div>
+                                <!-- End Payment -->
+
+                                <!-- Start Submit -->
+                                <button type="submit" class="submit mt-4">
+                                    Place Order
+                                </button>
+                                <!-- End Submit -->
+
+                            </div>
                         </div>
+                        <!-- End Right Section -->
+
                     </div>
-
-                    <div class="proccess mt-5 d-flex align-items-center">
-                        <div class="left">
-                            <a href="#" class="mr-3"><i class="fas fa-long-arrow-alt-left mr-2"></i> Continue Shopping</a>
-                            <a href="#"><i class="fas fa-sync-alt mr-2"></i> Update Cart</a>
-                        </div>
-                        <div class="right ml-auto">
-                            <a href="#">Proceed To CheckOut <i class="fas fa-sign-out-alt ml-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- End buttons -->
-
+                </form>
             </div>
-        <!-- End Cart -->
+        </div>
+        <!-- End CheckOut -->
         <!-- ------------------------------------------------------------------------------ -->
 
         <!-- ------------------------------------------------------------------------------ -->
