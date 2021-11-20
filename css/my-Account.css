@@ -1,0 +1,171 @@
+#colors {
+    color: #046963;
+    color: #088178;
+    color: #1a1a1a;
+    color: #212529;
+    color: #3547B3;
+    color: #3547B3;
+    color: #465b52;
+    color: #4f5d77;
+    color: #63a2c1;
+    color: #d77f7a;
+    color: #fff;
+}
+
+.account {
+    font-family: "Quicksand", sans-serif;
+}
+
+/* Start Tabs */
+
+.account .tabs li {
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #7E7E7E;
+    padding: 15px 30px;
+    font-weight: 700;
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    transition: all .1s;
+}
+
+.account .tabs li:hover,
+.account .tabs .active {
+    color: #fff;
+    background-color: #088178;
+}
+
+/* End Tabs */
+
+/* ******************************************************************** */
+
+/* Start Dashboard */
+
+.account .pages .page {
+    display: none;
+}
+
+.account .pages .active {
+    display: block !important;
+}
+
+.account .pages .dashboard .image-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.account .pages .dashboard .image-box span {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1d1d1d;
+    position:  relative;
+    top: 4px;
+}
+
+.account .pages .dashboard .info p {
+    margin-bottom: 0 !important;
+    font-size: 17px;
+}
+
+.account .pages .dashboard .info p span {
+    color: #d77f7a;
+}
+
+@media (max-width: 400px) {
+    .account .pages .dashboard .image-box img {
+        width: 60px;
+        height: 60px;
+    }
+    .account .pages .dashboard .image-box span {
+        font-size: 20px;
+        top: 1px;
+    }
+    .account .pages .dashboard .info p {
+        font-size: 15px;
+    }
+}
+
+/* End Dashboard */
+
+/* ********************************************************** */
+
+/* Start Orders */
+
+.account .orders table {
+    min-width: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    max-height: 800px;
+}
+
+.account .orders table td {
+    vertical-align: middle !important;
+}
+
+.account .page .card-header {
+    font-size: 18px;
+}
+
+/* End Orders */
+
+/* ******************************************************** */
+
+/* Start Details */
+
+.account .details .form-group{
+    position: relative;
+    margin-bottom: 20px !important;
+}
+
+.account .details .form-group img {
+    position: absolute;
+    top: 5px;
+    width: 27px;
+    height: 27px;
+    left: 7px;
+}
+
+.account .details .form-group input {
+    padding: 0 5px 0px 47px;
+}
+
+.account .details .form-group:after {
+    content: '';
+    position: absolute;
+    left: 39px;
+    top: 0;
+    height: 36px;
+    height: 100%;
+    width: 1px;
+    background: linear-gradient( 
+    45deg
+    , #0000, #ccc, #0000);
+}
+
+.account .details .submit {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 35px;
+    border-radius: 4px;
+    color: #fff;
+    border: 1px solid #046963;
+    background-color: #088178;
+    cursor: pointer;
+    -webkit-transition: all 300ms linear 0s;
+    transition: all .3s;
+    letter-spacing: 0.5px;
+}
+.account .details .submit:hover {
+    background-color: #046963;
+}
+
+
+
+
+
+
+
+
+/* End Details */

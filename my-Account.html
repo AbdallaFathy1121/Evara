@@ -14,9 +14,9 @@
 
         <!-- Main Css File -->
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/checkout.css">
+        <link rel="stylesheet" href="css/my-Account.css">
 
-        <title>Evara - CheckOut</title>
+        <title>Evara - My Account</title>
 
     </head>
     <body id="scroll">
@@ -150,167 +150,183 @@
                 </li>
                 <i class="fas fa-angle-right"></i>
                 <li>
-                    <a href="#">Shop</a>
+                    <a href="#">My Account</a>
                 </li>
-                <i class="fas fa-angle-right"></i>
-                <li>
-                    <a href="#">CheckOut</a>
-                </li>
-               
             </div>
         </div>
         <!-- End Breadcrumb -->
         <!-- ------------------------------------------------------------------------------ -->
+        
 
         <!-- ------------------------------------------------------------------------------ -->
-        <!-- Start CheckOut -->
-        <div class="checkout mb-5 mt-5">
+        <!-- Start Account -->
+        <div class="account mt-5 mb-5">
             <div class="container">
-                <form action="">
-                    <div class="row">
+                <div class="row">
 
-                        <!-- Start Left Section -->
-                        <div class="col-lg-6 mb-lg-0 mb-4">
-                            <div class="left">
-                                <div class="title mb-4">
-                                    <img src="images/form/form.png" alt="">                                    
-                                    Billing Details
-                                </div>
-                                <div class="form-group">
-                                    <img src="images/form/name.png" alt="">
-                                    <input type="text" class="form-control" placeholder="Full Name *" required>
-                                </div>
-                                <div class="form-group">
-                                    <img src="images/form/phone.png" alt="">
-                                    <input type="number" class="form-control" placeholder="Your Phone (1) *" required>
-                                </div>
-                                <div class="form-group">
-                                    <img src="images/form/phone.png" alt="">
-                                    <input type="number" class="form-control" placeholder="Your Phone (2)">
-                                </div>
-                                <div class="row pl-0 pr-0">
-                                    <div class="col-md-6 pl-0 pr-lg-2 pr-md-2 pr-sm-0 pr-0">
-                                        <div class="form-group">
-                                            <img src="images/form/country.png" alt="">
-                                            <input type="text" class="form-control" placeholder="Your Country *" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 pr-0 pl-lg-2 pl-md-2 pl-sm-0 pl-0">
-                                        <div class="form-group">
-                                            <img src="images/form/city.png" alt="">
-                                            <input type="text" class="form-control" placeholder="Your City *" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <img src="images/form/code-zip.png" alt="">
-                                    <input type="text" class="form-control" placeholder="Postcode / Zip *" required>
-                                </div>
-                                <div class="form-group">
-                                    <img src="images/form/address.png" alt="">
-                                    <input type="text" class="form-control" placeholder="Your Address *" required>
-                                </div>
-                                <div class="form-group notes">
-                                    <textarea class="form-control" rows="6" placeholder="Order Notes ..."></textarea>
-                                </div>
-                            </div>
+                    <!-- Start Tabs -->
+                    <div class="col-lg-3 col-md-4 mb-lg-0 mb-md-0 mb-4">
+                        <div class="tabs">
+                            <li class="active dashboard">
+                                <i class='bx bx-slider-alt mr-2'></i>
+                                Dashboard
+                            </li>
+                            <li class="orders">
+                                <i class='bx bx-shopping-bag mr-2'></i>
+                                Orders
+                            </li>
+                            <li class="details">
+                                <i class='bx bx-user mr-2'></i>
+                                Account Details
+                            </li>
+                            <a href="login.html">
+                                <li>
+                                    <i class='bx bx-log-out mr-2'></i>
+                                    Logout
+                                </li>
+                            </a>
                         </div>
-                        <!-- End Left Section -->
-
-                        <!-- Start Right Section -->
-                        <div class="col-lg-6">
-                            <div class="right">
-                                <div class="title mb-4">
-                                    <img src="images/form/orders.png" alt="">
-                                    Your Orders
-                                </div>
-
-                                <!-- Start Table -->
-                                <div class="table-responsive-md mb-4">
-                                    <table class="table table-bordered text-center">
-                                        <thead>
-                                            <tr>
-                                                <th colspan="2">Product</th>
-                                                <th scope="col">total</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><img src="images/products/product-10-2.jpg" alt=""></td>
-                                                <td class="name">
-                                                    J.Crew Mercantile Women's Short-Sleeve
-                                                    <p>x 2</p>
-                                                </td>
-                                                <td class="price">$65.00</td>
-                                            </tr>
-                                            <tr>
-                                                <td><img src="images/products/product-14-2.jpg" alt=""></td>
-                                                <td class="name">
-                                                    LDB MOON Women Summe
-                                                    <p>x 3</p>
-                                                </td>
-                                                <td class="price">$180.00</td>
-                                            </tr>
-                                            <tr>
-                                                <td><img src="images/products/product-8-2.jpg" alt=""></td>
-                                                <td class="name">
-                                                    Women's Short Sleeve Loose
-                                                    <p>x 1</p>
-                                                </td>
-                                                <td class="price">$210.00</td>
-                                            </tr>
-
-                                            <!-- Strat Total -->
-                                            <tr>
-                                                <td colspan="1">
-                                                    Total
-                                                </td>
-                                                <td colspan="2" class="total-price">
-                                                    <span>$350.00</span> + Shipping Expenses
-                                                </td>
-                                            </tr>
-                                            <!-- End Total -->
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <!-- End Table -->
-
-                                <!-- Start Payment -->
-                                <div class="payment">
-                                    <div class="title mb-3">
-                                        <img src="images/form/payment.png" alt="">
-                                        Payment
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="method" id="Cach"checked>
-                                        <label class="form-check-label" for="Cach">
-                                            Cach
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="method" id="paypal">
-                                        <label class="form-check-label" for="paypal">
-                                            Paypal
-                                        </label>
-                                    </div>
-                                </div>
-                                <!-- End Payment -->
-
-                                <!-- Start Submit -->
-                                <button type="submit" class="submit mt-4">
-                                    Place Order
-                                </button>
-                                <!-- End Submit -->
-
-                            </div>
-                        </div>
-                        <!-- End Right Section -->
-
                     </div>
-                </form>
+                    <!-- End Tabs -->
+
+                    <!-- ------------------------------------------ -->
+
+                    <!-- Start Pages -->
+                    <div class="col-lg-9 col-md-8">
+                        <div class="pages">
+
+                            <!-- Strat Dashboard -->
+                            <div class="dashboard page active">
+                                <div class="image-box mb-4">
+                                    <img src="images/profile.png" alt="">
+                                    <span class="ml-3">Hello Roise!</span>
+                                </div>
+                                <div class="info">
+                                    <p>From your account dashboard. you can easily view your <span>orders</span></p>
+                                    <p>manage your <span>Account Details</span> and <span>Edit Your Profile</span></p>
+                                    <p class="mt-3"><strong>Please make sure to fill in your <span>account details</span> carefully</strong></p>
+                                </div>
+                            </div>
+                            <!-- End Dashboard -->
+
+                            <!-- Start Orders -->
+                            <div class="orders page">
+                                <div class="card">
+                                    <div class="card-header">
+                                      Your Orders
+                                    </div>
+                                    <div class="card-body">
+                                        <table class="table table-striped table-bordered table-hover table-responsive-md">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Order</th>
+                                                    <th scope="col">Date</th>
+                                                    <th scope="col">Status</th>
+                                                    <th scope="col">Total</th>
+                                                    <th scope="col">Items</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>#523</td>
+                                                    <td>22/10/2020</td>
+                                                    <td>Processing</td>
+                                                    <td>$125.00</td>
+                                                    <td>2 item</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>#102</td>
+                                                    <td>30/5/2016</td>
+                                                    <td>Completed</td>
+                                                    <td>$256.00</td>
+                                                    <td>5 item</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>#53</td>
+                                                    <td>8/11/2018</td>
+                                                    <td>Processing</td>
+                                                    <td>$501.00</td>
+                                                    <td>6 item</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>#96</td>
+                                                    <td>2/4/2021</td>
+                                                    <td>Completed</td>
+                                                    <td>$569.00</td>
+                                                    <td>7 item</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Orders -->
+
+                            <!-- Start details -->
+                            <div class="details page">
+                                <div class="card">
+                                    <div class="card-header">
+                                      Account Details
+                                    </div>
+                                    <div class="card-body">
+                                        <form action="">
+                                            <div class="input-group mb-3">
+                                                <div class="custom-file">
+                                                  <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                                  <label class="custom-file-label" for="inputGroupFile01">Upload Photo</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <img src="images/form/name.png" alt="">
+                                                <input type="text" class="form-control" placeholder="Full Name *" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <img src="images/form/phone.png" alt="">
+                                                <input type="number" class="form-control" placeholder="Your Phone (1) *" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <img src="images/form/phone.png" alt="">
+                                                <input type="number" class="form-control" placeholder="Your Phone (2)">
+                                            </div>
+                                            <div class="row pl-0 pr-0">
+                                                <div class="col-md-6 pl-0 pr-lg-2 pr-md-2 pr-sm-0 pr-0">
+                                                    <div class="form-group">
+                                                        <img src="images/form/country.png" alt="">
+                                                        <input type="text" class="form-control" placeholder="Your Country *" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 pr-0 pl-lg-2 pl-md-2 pl-sm-0 pl-0">
+                                                    <div class="form-group">
+                                                        <img src="images/form/city.png" alt="">
+                                                        <input type="text" class="form-control" placeholder="Your City *" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <img src="images/form/code-zip.png" alt="">
+                                                <input type="text" class="form-control" placeholder="Postcode / Zip *" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <img src="images/form/address.png" alt="">
+                                                <input type="text" class="form-control" placeholder="Your Address *" required>
+                                            </div>
+
+                                            <button type="submit" class="submit">Save</button>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End details -->
+
+                        </div>
+                    </div>
+                    <!-- End Pages -->
+
+                </div>
             </div>
         </div>
-        <!-- End CheckOut -->
+        <!-- End Account -->
         <!-- ------------------------------------------------------------------------------ -->
 
         <!-- ------------------------------------------------------------------------------ -->

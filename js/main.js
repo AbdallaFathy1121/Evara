@@ -6,6 +6,29 @@ $(window).on('load', function() {
         $(this).remove().fadeOut();
     });
 
+    ////////////////////////////////////////////////////////////
+
+    // Manage Profile Pages & Tabs
+
+    $(".account .tabs li").click(function(){
+      $(this).addClass("active").siblings().removeClass("active");
+    });
+
+    $(".account .tabs .orders").click(function(){
+      $(".account .pages .page").removeClass("active");
+      $(".account .pages .orders").addClass("active");
+    });
+
+    $(".account .tabs .dashboard").click(function(){
+      $(".account .pages .page").removeClass("active");
+      $(".account .pages .dashboard").addClass("active");
+    });
+
+    $(".account .tabs .details").click(function(){
+      $(".account .pages .page").removeClass("active");
+      $(".account .pages .details").addClass("active");
+    });
+
     ////////////////////////////////////////////////////
 
         // SLick in Product page
@@ -102,7 +125,7 @@ $(window).on('load', function() {
 
     $(window).scroll(function(){
 
-        if ( $(window).scrollTop() > 600 ) {
+        if ( $(window).scrollTop() > 100 ) {
             
             $('.scroll').css({
                 opacity: 1
@@ -256,6 +279,10 @@ $(window).on('load', function() {
     /////////////////////////////////////////////////////
 
     $(".product .slick-slide").height( $(".product .slider-single .item").height() );
+
+    ///////////////////////////////////////////////////////
+
+
 
 
 
