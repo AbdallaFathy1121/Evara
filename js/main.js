@@ -1,6 +1,63 @@
 
 $(window).on('load', function() {
 
+    /////////////////////////////////////////////
+
+    // ScrollTop 
+
+    $('.scroll').click(function(){
+      $('body, html').animate({
+          scrollTop: 0
+      }, 1200);
+    });
+
+    $(window).scroll(function(){
+
+        if ( $(window).scrollTop() > 100 ) {
+            
+            $('.scroll').css({
+                opacity: 1
+            });
+
+        } else{
+
+            $('.scroll').css({
+                opacity: 0
+            });
+
+        }
+    });
+  
+    // Swiper Liberary
+
+    $(function () {
+      'use strict';
+      var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides:true,
+          slidesPerView: 'auto',
+          loop: false,
+          coverflowEffect: {
+              rotate: 30,
+              stretch: 10,
+              depth: 100,
+              modifier: 2,
+              slideShadows : true,
+          },
+          pagination: {
+              el: '.swiper-pagination'
+          },
+          navigation : {
+              nextEl: '.swiper-button-next',
+              prevEl:'.swiper-button-prev'
+          }
+      });
+      swiper.slideTo(3, false,false);
+    });
+
+    ///////////////////////////////////////////////////////////
+
     // Loading
     $(".box-loading").delay(0).fadeOut('slow', function(){
         $(this).remove().fadeOut();
@@ -113,7 +170,7 @@ $(window).on('load', function() {
 
     });
 
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////
 
     // ScrollTop 
 
