@@ -1,32 +1,7 @@
 
 $(window).on('load', function() {
 
-    /////////////////////////////////////////////
 
-    // ScrollTop 
-
-    $('.scroll').click(function(){
-      $('body, html').animate({
-          scrollTop: 0
-      }, 1200);
-    });
-
-    $(window).scroll(function(){
-
-        if ( $(window).scrollTop() > 100 ) {
-            
-            $('.scroll').css({
-                opacity: 1
-            });
-
-        } else{
-
-            $('.scroll').css({
-                opacity: 0
-            });
-
-        }
-    });
   
     // Swiper Liberary
 
@@ -54,6 +29,33 @@ $(window).on('load', function() {
           }
       });
       swiper.slideTo(3, false,false);
+    });
+
+    /////////////////////////////////////////////
+
+    // ScrollTop 
+
+    $('.scroll').click(function(){
+      $('body, html').animate({
+          scrollTop: 0
+      }, 1200);
+    });
+
+    $(window).scroll(function(){
+
+        if ( $(window).scrollTop() > 100 ) {
+            
+            $('.scroll').css({
+                opacity: 1
+            });
+
+        } else{
+
+            $('.scroll').css({
+                opacity: 0
+            });
+
+        }
     });
 
     ///////////////////////////////////////////////////////////
