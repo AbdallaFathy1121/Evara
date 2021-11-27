@@ -1,7 +1,5 @@
 
 $(window).on('load', function() {
-
-
   
     // Swiper Liberary
 

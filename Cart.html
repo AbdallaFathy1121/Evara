@@ -193,9 +193,9 @@
                                 <td class="name">J.Crew Mercantile Women's Short-Sleeve</td>
                                 <td class="price">$65.00</td>
                                 <td class="qty">
-                                    <input type="number" min="1">
+                                    <input type="number" min="1" value="1" data-price="65.00">
                                 </td>
-                                <td class="subtotal">$65.00</td>
+                                <td class="subtotal">65.00</td>
                                 <td class="remove">
                                     <a href="#">
                                         <i class='bx bx-trash'></i>
@@ -207,9 +207,9 @@
                                 <td class="name">Amazon Essentials Women's Tank</td>
                                 <td class="price">$75.00</td>
                                 <td class="qty">
-                                    <input type="number" min="1">
+                                    <input type="number" min="1" value="1" data-price="75.00">
                                 </td>
-                                <td class="subtotal">$150.00</td>
+                                <td class="subtotal">75.00</td>
                                 <td class="remove">
                                     <a href="#">
                                         <i class='bx bx-trash'></i>
@@ -219,11 +219,11 @@
                             <tr>
                                 <td><img src="images/products/product-8-2.jpg" alt=""></td>
                                 <td class="name">Amazon Brand - Daily Ritual Women's Jersey</td>
-                                <td class="price">$53.00</td>
+                                <td class="price">$53.50</td>
                                 <td class="qty">
-                                    <input type="number" min="1">
+                                    <input type="number" min="1" value="1" data-price="53.50">
                                 </td>
-                                <td class="subtotal">$110.00</td>
+                                <td class="subtotal">53.50</td>
                                 <td class="remove">
                                     <a href="#">
                                         <i class='bx bx-trash'></i>
@@ -240,7 +240,7 @@
 
                     <div class="info d-flex align-items-center">
                         <div class="left">
-                            <a href="#">Total: <span>$568.00</span></a>
+                            <a href="#" data-total="">Total: <span>$568.00</span></a>
                         </div>
                         <div class="right ml-auto">
                             <a href="#" class="clear ml-auto">
@@ -425,6 +425,18 @@
         <script src="vendor/fontawesome/all.min.js"></script>
         <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
         <script src="vendor/slick/slick.min.js"></script>
+
+        <script>
+            
+            $(".qty input").on('change keyup', function(){
+                
+                let price = parseFloat($(this).data("price"));
+                let qty = parseFloat($(this).val());
+                $(this).closest("td").next("td").html(price * qty);
+            });
+
+
+        </script>
 
         <!-- Main Js Files -->
         <script src="js/main.js"></script>
