@@ -1,5 +1,11 @@
 
 $(window).on('load', function() {
+
+    // Filter Price
+    $(".shop .filter .js-range-slider").on("change", function(){
+        $(".shop .filter .max").val( $(".shop .filter .irs-to").text() );
+        $(".shop .filter .min").val( $(".shop .filter .irs-from").text() );
+    });
   
     // Swiper Liberary
 
@@ -44,13 +50,15 @@ $(window).on('load', function() {
         if ( $(window).scrollTop() > 100 ) {
             
             $('.scroll').css({
-                opacity: 1
+                opacity: 1,
+                bottom: '3%'
             });
 
         } else{
 
             $('.scroll').css({
-                opacity: 0
+                opacity: 0,
+                bottom: '90%'
             });
 
         }

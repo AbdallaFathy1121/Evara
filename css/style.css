@@ -1325,8 +1325,8 @@ li {
 
 .scroll {
     position: fixed;
-    right: 3%;
-    bottom: 5%;
+    right: 2%;
+    bottom: 3%;
     width: 40px !important;
     height: 37px;
     cursor: pointer;
@@ -1334,10 +1334,10 @@ li {
     color: #fff;
     background: #088178;
     z-index: 99;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
     box-shadow:  0 0 2px 2px transparent;
     opacity: 0;
 }

@@ -427,15 +427,11 @@
         <script src="vendor/slick/slick.min.js"></script>
 
         <script>
-            
             $(".qty input").on('change keyup', function(){
-                
                 let price = parseFloat($(this).data("price"));
                 let qty = parseFloat($(this).val());
                 $(this).closest("td").next("td").html(price * qty);
             });
-
-
         </script>
 
         <!-- Main Js Files -->
