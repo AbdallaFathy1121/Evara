@@ -48,9 +48,9 @@
                         <div class="right col-lg-6 col-md-6 col-sm-6 col-12 text-lg-right text-md-right text-sm-right  text-center">
                             <div>
                                 <i class='bx bx-user' ></i>
-                                <a href="#">Log In</a>
+                                <a href="login.html">Log In</a>
                                 <span>/</span>
-                                <a href="#">Sign Up</a>
+                                <a href="register.html">Sign Up</a>
                             </div>
                         </div>
 
@@ -82,11 +82,11 @@
                                 <i class='bx bx-heart'></i>
                                 <div class="number">4</div>
                             </a>
-                            <a href="#">
+                            <a href="Cart.html">
                                 <i class='bx bx-shopping-bag' ></i>
                                 <div class="number">2</div>
                             </a>
-                            <a href="#">
+                            <a href="my-Account.html">
                                 <i class='bx bx-user' ></i>
                             </a>
                         </div>
@@ -107,19 +107,19 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="about.html">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Shop</a>
+                                <a class="nav-link" href="shop.html">Shop</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Blogs</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="contact.html">Contact</a>
                             </li>
                         </ul>
                         <form action="" class="mt-2 mb-2">
@@ -176,6 +176,10 @@
                                 Orders
                             </li>
                             <li class="details">
+                                <i class='bx bx-user mr-2'></i>
+                                Billing Details
+                            </li>
+                            <li class="account-details">
                                 <i class='bx bx-user mr-2'></i>
                                 Account Details
                             </li>
@@ -266,16 +270,10 @@
                             <div class="details page">
                                 <div class="card">
                                     <div class="card-header">
-                                      Account Details
+                                      Billing Details
                                     </div>
                                     <div class="card-body">
                                         <form action="">
-                                            <div class="input-group mb-3">
-                                                <div class="custom-file">
-                                                  <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                                                  <label class="custom-file-label" for="inputGroupFile01">Upload Photo</label>
-                                                </div>
-                                            </div>
                                             <div class="form-group">
                                                 <img src="images/form/name.png" alt="">
                                                 <input type="text" class="form-control" placeholder="Full Name *" required>
@@ -318,6 +316,33 @@
                                 </div>
                             </div>
                             <!-- End details -->
+
+                            <!-- Start Account Details -->
+                            <div class="account-details page">
+                                <div class="card">
+                                    <div class="card-header">
+                                        Account Details
+                                    </div>
+                                    <div class="card-body">
+                                        <form method="post" action="http://evara-shop.ahmed-projects.me/update_account">
+                                            <input type="hidden" name="_token" value="J7sX5T7wlZCeLE4slxuOtQFbvG4bL5IG5LtFc5XH">                                            <div class="form-group">
+                                                    <img src="./images/form/name.png" alt="">
+                                                    <input type="text" name="username" class="form-control" value="" placeholder="Username" required="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <img src="./images//form/email.png" alt="">
+                                                    <input type="email" name="email" class="form-control" value="" placeholder="Your Email" required="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <img src="./images/form/password.png" alt="">
+                                                    <input type="password" name="password" class="form-control" value="" placeholder="Your password">
+                                                </div>
+                                                <button type="submit" class="submit">Save</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Account Details -->
 
                         </div>
                     </div>

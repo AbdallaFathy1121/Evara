@@ -114,12 +114,14 @@
 
 /* Start Details */
 
-.account .details .form-group{
+.account .details .form-group ,
+.account-details .form-group {
     position: relative;
     margin-bottom: 20px !important;
 }
 
-.account .details .form-group img {
+.account .details .form-group img ,
+.account-details .form-group img {
     position: absolute;
     top: 5px;
     width: 27px;
@@ -127,11 +129,13 @@
     left: 7px;
 }
 
-.account .details .form-group input {
+.account .details .form-group input ,
+.account-details .form-group input {
     padding: 0 5px 0px 47px;
 }
 
-.account .details .form-group:after {
+.account .details .form-group:after ,
+.account-details .form-group:after {
     content: '';
     position: absolute;
     left: 39px;
@@ -144,7 +148,8 @@
     , #0000, #ccc, #0000);
 }
 
-.account .details .submit {
+.account .details .submit ,
+.account-details .submit {
     font-size: 18px;
     font-weight: 700;
     padding: 12px 35px;
@@ -157,7 +162,8 @@
     transition: all .3s;
     letter-spacing: 0.5px;
 }
-.account .details .submit:hover {
+.account .details .submit:hover , 
+.account-details .submit:hover {
     background-color: #046963;
 }
 

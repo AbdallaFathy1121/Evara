@@ -94,6 +94,11 @@ $(window).on('load', function() {
       $(".account .pages .details").addClass("active");
     });
 
+    $(".account .tabs .account-details").click(function(){
+      $(".account .pages .page").removeClass("active");
+      $(".account .pages .account-details").addClass("active");
+    });
+
     ////////////////////////////////////////////////////
 
         // SLick in Product page
